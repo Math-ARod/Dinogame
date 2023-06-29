@@ -4,8 +4,49 @@
     padding: 0;
 }
 
-#game{
-    width: 500px;
+#game {
+    width: 100vw;
     height: 200px;
-    border: 1px solid block;
+    border: 1px solid black;
+}
+
+/* -_-_-_- PERSONAGEM -_-_-_- */
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+
+    /* definindo o personagem preso ao chão */
+    position: relative;
+    top: 150px;
+}
+
+@keyframes character {
+    0%{top: 150px;}
+    45%{top: 100px}
+    50%{top: 100px}
+    100%{top: 150px}
+}
+
+.animar {
+    animation: character 700ms infinite;
+}
+
+/* -_-_-_- OBSTÁCULO -_-_-_- */
+
+#square {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 120vw;
+
+    animation: square 3s infinite linear;
+}
+
+@keyframes square {
+    0%{left: 120vw;}
+    100%{left: -10vw}
 }
