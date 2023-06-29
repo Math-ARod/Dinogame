@@ -5,9 +5,16 @@
 }
 
 #game {
-    width: 500px;
+    width: 100vw;
     height: 200px;
     border: 1px solid black;
+    background-color: rgb(98, 158, 255);
+}
+
+#grass {
+    height: 2vw;
+    background-color: rgb(36, 159, 36);
+    margin-bottom: 50px;
 }
 
 /* -_-_-_- PERSONAGEM -_-_-_- */
@@ -15,7 +22,8 @@
 #character {
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(240, 173, 110);
+    border: solid 1px black;
 
     /* definindo o personagem preso ao chão */
     position: relative;
@@ -39,15 +47,58 @@
 #square {
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(200, 72, 81);
     position: relative;
     top: 130px;
-    left: 500px;
+    left: 100vw;
+    border: solid 1px black;
 
-    animation: square 1.5s infinite linear;
+    animation: square 3s infinite linear;
 }
 
 @keyframes square {
-    0%{left: 480px;}
-    100%{left: -20px}
+    0%{left: 100vw;}
+    100%{left: -40vw}
+}
+
+/* -_-_-_- OBSTÁCULO 2 -_-_-_- */
+
+#square2 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(200, 72, 81);
+    position: relative;
+    top: 111px;
+    left: 50vw;
+    border: solid 1px black;
+
+    animation: square2 3s infinite linear;
+}
+
+@keyframes square2 {
+    0%{left: 140vw;}
+    100%{left: 0vw}
+}
+
+/* APRESENTAÇÃO */
+
+#apresentation {
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.aptitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px 100px 0 100px;
 }
