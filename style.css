@@ -1,0 +1,11 @@
+/* remover as margens padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid block;
+}
