@@ -47,7 +47,7 @@
 #square {
     width: 20px;
     height: 20px;
-    background-color: rgb(200, 72, 81);
+    background-color: rgb(199, 15, 27);
     position: relative;
     top: 130px;
     left: 100vw;
@@ -58,7 +58,7 @@
 
 @keyframes square {
     0%{left: 100vw;}
-    100%{left: -40vw}
+    100%{left: 0vw}
 }
 
 /* -_-_-_- OBSTÁCULO 2 -_-_-_- */
@@ -66,17 +66,36 @@
 #square2 {
     width: 20px;
     height: 20px;
-    background-color: rgb(200, 72, 81);
+    background-color: rgb(62, 0, 162);
     position: relative;
-    top: 111px;
+    top: 109px;
     left: 50vw;
     border: solid 1px black;
 
-    animation: square2 3s infinite linear;
+    animation: square2 4s infinite linear;
 }
 
 @keyframes square2 {
     0%{left: 140vw;}
+    100%{left: 0vw}
+}
+
+/* -_-_-_- OBSTÁCULO 3 -_-_-_- */
+
+#square3 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 255, 39);
+    position: relative;
+    top: 85px;
+    left: 0vw;
+    border: solid 1px black;
+
+    animation: square3 5s infinite linear;
+}
+
+@keyframes square3 {
+    0%{left: 180vw;}
     100%{left: 0vw}
 }
 
