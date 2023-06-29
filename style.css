@@ -5,7 +5,7 @@
 }
 
 #game {
-    width: 100vw;
+    width: 500px;
     height: 200px;
     border: 1px solid black;
 }
@@ -20,6 +20,7 @@
     /* definindo o personagem preso ao chão */
     position: relative;
     top: 150px;
+    right: -30px
 }
 
 @keyframes character {
@@ -41,12 +42,12 @@
     background-color: blue;
     position: relative;
     top: 130px;
-    left: 120vw;
+    left: 500px;
 
-    animation: square 3s infinite linear;
+    animation: square 1.5s infinite linear;
 }
 
 @keyframes square {
-    0%{left: 120vw;}
-    100%{left: -10vw}
+    0%{left: 480px;}
+    100%{left: -20px}
 }
