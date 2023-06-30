@@ -72,7 +72,7 @@
     left: 50vw;
     border: solid 1px black;
 
-    animation: square2 4s infinite linear;
+    animation: square2 4.2s infinite linear;
 }
 
 @keyframes square2 {
@@ -91,7 +91,7 @@
     left: 0vw;
     border: solid 1px black;
 
-    animation: square3 5s infinite linear;
+    animation: square3 5.3s infinite linear;
 }
 
 @keyframes square3 {
